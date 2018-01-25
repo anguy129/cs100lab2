@@ -3,11 +3,12 @@
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
 then
 	echo "Error: Too few parameters"
+	exit 1
 
 elif [ "$#" -gt 3 ]
 then
         echo "Error: Too many parameters"
-
+	exit 1
 fi
 
 if [ "$1" -lt "$2" ]
