@@ -19,5 +19,10 @@ then
 		echo "$2"
 	fi
 else
-	echo "$1"
+	if [ "$1" -lt "$3" ]
+	then
+		echo "$3"
+	else
+		echo "$1"
+	fi
 fi
